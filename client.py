@@ -24,10 +24,10 @@ while True:
     print("received:", key)
     mouse_move = client_socket.recv(1024)  
     mouse_move = mouse_move.decode()  # Decode the received bytes
-    print("Mouse move:", mouse_move)
+    #print("Mouse move:", mouse_move)
     mouse_click = client_socket.recv(1024)
     mouse_click = mouse_click.decode()  
-    print("Mouse click:", mouse_click)
+  #  print("Mouse click:", mouse_click)
     mouse_scroll = client_socket.recv(1024)
     mouse_scroll = mouse_scroll.decode()  
-    print("Mouse scroll:", mouse_scroll)
+   # print("Mouse scroll:", mouse_scroll)
